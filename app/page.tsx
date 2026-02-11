@@ -9,14 +9,14 @@ const INSTAGRAM_HANDLE = "iconic_clothes_ks";
 const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
 
 const products = [
-  { id: 1, name: "LTB puffer jacket | nr.M-L", nameSq: "Jakë lëkure vintazh", price: "€35", image: "/images/jacket6.jpeg" },
-  { id: 2, name: "Classic Denim Jacket | nr.M", nameSq: "Jakë xhinse klasike", price: "€65", image: "/images/jacket1.jpeg" },
-  { id: 3, name: "Bomber Jacket | nr.L", nameSq: "Jakë bomber", price: "€75", image: "/images/jacket2.jpeg" },
-  { id: 4, name: "Lekur 100% | nr.L", nameSq: "Blazer e madhe", price: "€135", image: "/images/jacket3.jpeg" },
-  { id: 5, name: "Cropped Shearling | nr.M", nameSq: "Jakë shearling e shkurtër", price: "€120", image: "/images/jacket4.jpeg" },
-  { id: 6, name: "Vintage Suede Jacket | nr.L", nameSq: "Jakë suede vintazh", price: "€85", image: "/images/jacket5.jpeg" },
-  { id: 7, name: "Minimal Wool Coat | nr.M", nameSq: "Pallto leshi minimal", price: "€110", image: "/images/jacket7.jpeg" },
-  { id: 8, name: "Lekure 100% | nr.S", nameSq: "Jakë sportive klasike", price: "€35", image: "/images/jacket8.jpeg" },
+  { id: 1, name: "LTB puffer jacket | nr.M-L", nameSq: "Xhaketë lëkure vintazh | nr.M-L", price: "€35", image: "/images/jacket6.jpeg" },
+  { id: 2, name: "Classic Denim Jacket | nr.M", nameSq: "Xhaketë xhinse klasike | nr.M", price: "€65", image: "/images/jacket1.jpeg" },
+  { id: 3, name: "Bomber Jacket | nr.L", nameSq: "Xhaketë bomber | nr.L", price: "€75", image: "/images/jacket2.jpeg" },
+  { id: 4, name: "Lekur 100% | nr.L", nameSq: "Blazer e madhe | nr.L", price: "€135", image: "/images/jacket3.jpeg" },
+  { id: 5, name: "Cropped Shearling | nr.M", nameSq: "Xhaketë shearling e shkurtër | nr.M", price: "€120", image: "/images/jacket4.jpeg" },
+  { id: 6, name: "Vintage Suede Jacket | nr.L", nameSq: "Xhaketë suede vintazh | nr.L", price: "€85", image: "/images/jacket5.jpeg" },
+  { id: 7, name: "Minimal Wool Coat | nr.M", nameSq: "Pallto leshi minimal | nr.M", price: "€110", image: "/images/jacket7.jpeg" },
+  { id: 8, name: "Lekure 100% | nr.S", nameSq: "Xhaketë sportive klasike | nr.S", price: "€35", image: "/images/jacket8.jpeg" },
 ];
 
 function InstagramIcon({ className }: { className?: string }) {
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="flex flex-col justify-center px-5 py-20 sm:px-8 sm:py-24 lg:px-12 xl:px-16">
           <div className="mx-auto w-full max-w-md lg:mx-0">
             <p className={`text-xs font-medium uppercase tracking-[0.35em] ${textSubtle}`}>
-              {locale === "sq" ? "Jakna ikonike & vintage" : "Iconic & vintage jackets"}
+              {locale === "sq" ? "Xhaketa ikonike & vintage" : "Iconic & vintage jackets"}
             </p>
             <h1 className="mt-2 flex flex-wrap items-baseline gap-2 sm:mt-3">
               <span className="text-2xl font-semibold uppercase tracking-[0.2em] sm:text-3xl md:tracking-[0.28em] lg:text-4xl">
@@ -153,7 +153,7 @@ export default function Home() {
         <div className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-screen">
           <Image
             src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=1200&q=85"
-            alt={locale === "sq" ? "Jakë ikonike – iconic_clothes_ks" : "Iconic jacket – iconic_clothes_ks"}
+            alt={locale === "sq" ? "Xhaketë ikonike – iconic_clothes_ks" : "Iconic jacket – iconic_clothes_ks"}
             fill
             className="object-cover object-center"
             priority
