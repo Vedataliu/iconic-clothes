@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Default = dark (default set dark mode) */
+:root,
+.dark {
+  --background: #0d0d0d;
+  --background-alt: #111111;
+  --background-muted: #0a0a0a;
+  --foreground: #ffffff;
+  --foreground-muted: rgba(255, 255, 255, 0.7);
+  --foreground-subtle: rgba(255, 255, 255, 0.5);
+  --border: rgba(255, 255, 255, 0.06);
+  --accent: #ff7f50;
+  --accent-hover: #ff9066;
+  --accent-gold: #ffc107;
+}
+
+.light {
+  --background: #fafafa;
+  --background-alt: #f0f0f0;
+  --background-muted: #ffffff;
+  --foreground: #1a1a1a;
+  --foreground-muted: rgba(0, 0, 0, 0.7);
+  --foreground-subtle: rgba(0, 0, 0, 0.45);
+  --border: rgba(0, 0, 0, 0.08);
+  --accent: #ff7f50;
+  --accent-hover: #e67347;
+  --accent-gold: #d4a506;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-gold: var(--accent-gold);
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
