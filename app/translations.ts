@@ -24,7 +24,7 @@ export const translations = {
     },
     about: {
       label: "Rreth nesh",
-      text: "iconic_clothes_ks ofron jakna ikonike dhe vintage të zgjedhura nga brendet më të njohura botërore. Merremi me shitjen online të jaknave të personalizuara. Çdo copë është e vetme – për ata që duan të dallojnë me stil.",
+      text: "iconic_clothes_ks ofron xhaketa ikonike dhe vintage të zgjedhura nga brendet më të njohura botërore. Merremi me shitjen online të jaknave të personalizuara. Çdo copë është e vetme – për ata që duan të dallojnë me stil.",
       guarantee: "Garancion cilësie – vetëm produkte të verifikuara",
     },
     contact: {
