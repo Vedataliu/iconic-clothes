@@ -152,7 +152,7 @@ export default function Home() {
         </div>
         <div className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-screen">
           <Image
-            src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=1200&q=85"
+            src="/images/jacketmain.jpeg"
             alt={locale === "sq" ? "Xhaketë ikonike – iconic_clothes_ks" : "Iconic jacket – iconic_clothes_ks"}
             fill
             className="object-cover object-center"
