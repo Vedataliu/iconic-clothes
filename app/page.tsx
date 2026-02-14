@@ -9,14 +9,14 @@ const INSTAGRAM_HANDLE = "iconic_clothes_ks";
 const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
 
 const products = [
-  { id: 1, name: "LTB puffer jacket | nr.M-L", nameSq: "Xhaketë lëkure vintazh | nr.M-L", price: "€35", image: "/images/jacket6.jpeg" },
-  { id: 2, name: "Classic Denim Jacket | nr.M", nameSq: "Xhaketë xhinse klasike | nr.M", price: "€65", image: "/images/jacket1.jpeg" },
-  { id: 3, name: "Bomber Jacket | nr.L", nameSq: "Xhaketë bomber | nr.L", price: "€75", image: "/images/jacket2.jpeg" },
-  { id: 4, name: "Lekur 100% | nr.L", nameSq: "Blazer e madhe | nr.L", price: "€135", image: "/images/jacket3.jpeg" },
-  { id: 5, name: "Cropped Shearling | nr.M", nameSq: "Xhaketë shearling e shkurtër | nr.M", price: "€120", image: "/images/jacket4.jpeg" },
-  { id: 6, name: "Vintage Suede Jacket | nr.L", nameSq: "Xhaketë suede vintazh | nr.L", price: "€85", image: "/images/jacket5.jpeg" },
+  { id: 1, name: "100% lekure | nr.XL", nameSq: "Xhaketë lekure 100%| nr.XL", price: "€45", image: "/images/jacket1.jpeg" },
+  { id: 2, name: "Vintage Suede Jacket | nr.L", nameSq: "Xhaketë lekure 100% | nr.XL", price: "€35", image: "/images/jacket6.jpeg" },
+  { id: 3, name: "Bomber Jacket | nr.L", nameSq: "Xhaketë lekyre 100%  | nr.M", price: "€45", image: "/images/jacket2.jpeg" },
+  { id: 4, name: "Lekur 100% | nr.L", nameSq: "Blazer e madhe | nr.XL", price: "€45", image: "/images/jacket3.jpeg" },
+  { id: 5, name: "Cropped Shearling | nr.M", nameSq: "Xhaketë shearling e shkurtër | nr.XL", price: "€130", image: "/images/jacket4.jpeg" },
+  { id: 6, name: "Vintage Suede Jacket | nr.L", nameSq: "Xhaketë suede vintazh | nr.XL", price: "€35", image: "/images/jacket5.jpeg" },
   { id: 7, name: "Minimal Wool Coat | nr.M", nameSq: "Pallto leshi minimal | nr.M", price: "€110", image: "/images/jacket7.jpeg" },
-  { id: 8, name: "Lekure 100% | nr.S", nameSq: "Xhaketë sportive klasike | nr.S", price: "€35", image: "/images/jacket8.jpeg" },
+  { id: 8, name: "Lekure 100% | nr.S", nameSq: "Xhaketë sportive klasike | nr.M", price: "€35", image: "/images/jacket8.jpeg" },
 ];
 
 function InstagramIcon({ className }: { className?: string }) {
