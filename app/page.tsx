@@ -6,17 +6,17 @@ import { useLanguage, useTheme } from "./providers";
 import { translations } from "./translations";
 
 const INSTAGRAM_HANDLE = "iconic_clothes_ks";
-const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_HANDLE}`;
+const INSTAGRAM_URL = "https://www.instagram.com/iconic_clothes_ks/";
 
 const products = [
-  { id: 1, name: "100% lekure | nr.XL", nameSq: "Xhaketë lekure 100%| nr.XL", price: "€45", image: "/images/jacket1.jpeg" },
-  { id: 2, name: "Vintage Suede Jacket | nr.L", nameSq: "Xhaketë lekure 100% | nr.XL", price: "€35", image: "/images/jacket6.jpeg" },
-  { id: 3, name: "Bomber Jacket | nr.L", nameSq: "Xhaketë lekyre 100%  | nr.M", price: "€45", image: "/images/jacket2.jpeg" },
-  { id: 4, name: "Lekur 100% | nr.L", nameSq: "Blazer e madhe | nr.XL", price: "€45", image: "/images/jacket3.jpeg" },
-  { id: 5, name: "Cropped Shearling | nr.M", nameSq: "Xhaketë shearling e shkurtër | nr.XL", price: "€130", image: "/images/jacket4.jpeg" },
-  { id: 6, name: "Vintage Suede Jacket | nr.L", nameSq: "Xhaketë suede vintazh | nr.XL", price: "€35", image: "/images/jacket5.jpeg" },
-  { id: 7, name: "Minimal Wool Coat | nr.M", nameSq: "Pallto leshi minimal | nr.M", price: "€110", image: "/images/jacket7.jpeg" },
-  { id: 8, name: "Lekure 100% | nr.S", nameSq: "Xhaketë sportive klasike | nr.M", price: "€35", image: "/images/jacket8.jpeg" },
+  { id: 1, name: "100% Leather Jacket | XL", nameSq: "Xhaketë lëkure 100% | nr.XL", price: "€45", image: "/images/jacket1.jpeg" },
+  { id: 2, name: "Vintage Suede Jacket | L", nameSq: "Xhaketë suede vintazh | nr.L", price: "€75", image: "/images/jacket6.jpeg" },
+  { id: 3, name: "Leather Vest 100% | M", nameSq: "Jelek lëkure 100% | nr.M", price: "€45", image: "/images/jacket2.jpeg" },
+  { id: 4, name: "Oversized Blazer | XL", nameSq: "Blazer e madhe | nr.XL", price: "€45", image: "/images/jacket3.jpeg" },
+  { id: 5, name: "Shearling Jacket | M", nameSq: "Xhaketë shearling | nr.M", price: "€130", image: "/images/jacket4.jpeg" },
+  { id: 6, name: "Vintage Suede Jacket | L", nameSq: "Xhaketë suede vintazh | nr.L", price: "€35", image: "/images/jacket5.jpeg" },
+  { id: 7, name: "Minimal Wool Coat | M", nameSq: "Pallto leshi minimale | nr.M", price: "€110", image: "/images/jacket7.jpeg" },
+  { id: 8, name: "Classic Sports Jacket | S", nameSq: "Xhaketë sportive klasike | nr.S", price: "€35", image: "/images/jacket8.jpeg" },
 ];
 
 function InstagramIcon({ className }: { className?: string }) {
@@ -115,45 +115,57 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero – refined start of page */}
+      {/* Hero */}
       <section className="grid min-h-screen grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center px-5 py-20 sm:px-8 sm:py-24 lg:px-12 xl:px-16">
-          <div className="mx-auto w-full max-w-md lg:mx-0">
-            <p className={`text-xs font-medium uppercase tracking-[0.35em] ${textSubtle}`}>
-              {locale === "sq" ? "Xhaketa ikonike & vintage" : "Iconic & vintage jackets"}
+        <div className="flex flex-col justify-center px-6 py-24 sm:px-10 sm:py-32 lg:px-14 xl:px-20">
+          <div className="mx-auto w-full max-w-lg lg:mx-0">
+            {/* Label */}
+            <p className={`text-[11px] font-medium uppercase tracking-[0.4em] ${textSubtle}`}>
+              {t.hero.label}
             </p>
-            <h1 className="mt-2 flex flex-wrap items-baseline gap-2 sm:mt-3">
-              <span className="text-2xl font-semibold uppercase tracking-[0.2em] sm:text-3xl md:tracking-[0.28em] lg:text-4xl">
+
+            {/* Title block */}
+            <div className="mt-5 sm:mt-6">
+              <h1 className="text-3xl font-semibold uppercase tracking-[0.2em] sm:text-4xl md:tracking-[0.28em] lg:text-5xl">
                 {t.hero.title}
-              </span>
-              <span className={`rounded px-2.5 py-1 text-sm font-bold uppercase tracking-widest ${bgAlt} ${text}`}>
-                {t.hero.badge}
-              </span>
-            </h1>
-            <p className={`mt-3 text-lg font-medium uppercase tracking-[0.18em] sm:mt-4 sm:text-xl md:text-2xl ${textMuted}`}>
-              {t.hero.tagline}
-            </p>
-            <p className={`mt-4 text-sm leading-relaxed sm:mt-6 sm:text-base ${textMuted}`}>
-              {t.hero.subtitle}
-            </p>
-            <p className={`mt-2 inline-flex items-center gap-1.5 rounded-full border ${border} ${bgAlt} px-3 py-1.5 text-xs font-medium sm:mt-3 sm:px-4 sm:py-2 sm:text-sm`}>
-              <span className="text-[#ff7f50]">◆</span>
-              {t.hero.customJackets}
-            </p>
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`mt-8 inline-block rounded-full px-6 py-3.5 text-center text-sm font-semibold uppercase tracking-wider text-white transition sm:mt-10 sm:px-8 sm:py-4 ${accent}`}
-            >
-              {t.hero.cta}
-            </a>
+                <span className={`ml-2 inline-flex translate-y-[-2px] rounded px-2 py-0.5 align-middle text-sm font-bold uppercase tracking-widest sm:ml-3 sm:px-2.5 sm:py-1 ${bgAlt} ${text}`}>
+                  {t.hero.badge}
+                </span>
+              </h1>
+              <p className={`mt-3 text-lg font-medium uppercase tracking-[0.18em] sm:mt-4 sm:text-xl md:text-2xl ${textMuted}`}>
+                {t.hero.tagline}
+              </p>
+            </div>
+
+            {/* Description block */}
+            <div className="mt-6 space-y-3 sm:mt-8">
+              <p className={`text-sm leading-relaxed sm:text-base ${textMuted}`}>
+                {t.hero.subtitle}
+              </p>
+              <p className={`inline-flex items-center gap-1.5 rounded-full border ${border} ${bgAlt} px-3.5 py-2 text-xs font-medium sm:px-4 sm:py-2.5 sm:text-sm`}>
+                <span className="text-[#ff7f50]">◆</span>
+                {t.hero.customJackets}
+              </p>
+            </div>
+
+            {/* CTA */}
+            <div className="mt-10 sm:mt-12">
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2.5 rounded-full px-7 py-4 text-sm font-semibold uppercase tracking-wider text-white shadow-lg shadow-[#ff7f50]/20 transition sm:px-9 sm:py-5 ${accent}`}
+              >
+                <InstagramIcon className="h-4 w-4" />
+                {t.hero.cta}
+              </a>
+            </div>
           </div>
         </div>
-        <div className="relative min-h-[40vh] sm:min-h-[50vh] lg:min-h-screen">
+        <div className="relative min-h-[45vh] sm:min-h-[55vh] lg:min-h-screen">
           <Image
             src="/images/jacketmain.jpeg"
-            alt={locale === "sq" ? "Xhaketë ikonike – iconic_clothes_ks" : "Iconic jacket – iconic_clothes_ks"}
+            alt={`${t.hero.label} – iconic_clothes_ks`}
             fill
             className="object-cover object-center"
             priority
@@ -251,23 +263,25 @@ export default function Home() {
 
       {/* Footer */}
       <footer className={`border-t ${border} ${bg} py-8 sm:py-10`}>
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 sm:px-6 lg:px-8">
           <Link href="#" className="flex items-center gap-2">
             <span className="text-sm font-semibold uppercase tracking-[0.2em]">{t.hero.title}</span>
             <span className={`rounded ${bgAlt} px-2 py-0.5 text-xs font-bold uppercase tracking-wider`}>{t.hero.badge}</span>
           </Link>
-          <a
-            href={INSTAGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`transition hover:text-[#ff7f50] ${textSubtle}`}
-            aria-label={`Instagram @${INSTAGRAM_HANDLE}`}
-          >
-            <InstagramIcon className="h-5 w-5" />
-          </a>
         </div>
         <p className={`mt-6 text-center text-xs uppercase tracking-widest ${textSubtle}`}>
           © {new Date().getFullYear()} iconic_clothes_ks. {t.footer.rights}
+        </p>
+        <p className={`mt-3 text-center text-xs tracking-wide ${textSubtle}`}>
+          Powered by{' '}
+          <a
+            href="https://www.linkedin.com/in/vedataliu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline transition hover:text-[#ff7f50]"
+          >
+            Vedat Aliu
+          </a>
         </p>
       </footer>
     </div>
