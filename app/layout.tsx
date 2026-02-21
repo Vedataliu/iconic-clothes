@@ -10,7 +10,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "iconic_clothes_ks – Iconic & Vintage Jackets | Online custom jackets",
+  title: "ICONIC CLOTHES KS",
   description:
     "Online sale of custom jackets. Iconic and vintage jackets from world-renowned brands. Instagram @iconic_clothes_ks",
 };
